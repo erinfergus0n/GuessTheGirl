@@ -10,6 +10,7 @@ function App() {
           Joanna: My favourtie hobbies are anything sport related. I particulary enjoy horse-riding and swimming. I also enjoy watching Formula 1.
           Erin: My favourite hobby is playing guitar. I love to play gigs with my friends.
           Annie: My favourite hobby is baking. I enjoy baking because it can be hard to find good vegan bakes.
+          Nesrin: My favourite hobby is reading and buying too many books. I read because I find it relaxing.
         </p>
         <a
           className="App-link"
