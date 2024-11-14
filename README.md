@@ -17,3 +17,7 @@ My favorite hobby is reading. <br>
 Joanna:
 My favourtie hobbies are anything sport related. <br>
 I particulary enjoy horse-riding and swimming. I also enjoy watching Formula 1.
+
+Erin:
+My favourite hobby is playing guitar. <br>
+I love to play gigs with my friends.
