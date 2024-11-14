@@ -21,3 +21,7 @@ I particulary enjoy horse-riding and swimming. I also enjoy watching Formula 1.
 Erin:
 My favourite hobby is playing guitar. <br>
 I love to play gigs with my friends.
+
+Annie:
+My favourite hobby is baking. <br>
+I do this because it can be hard to find good vegan baked goods. 
