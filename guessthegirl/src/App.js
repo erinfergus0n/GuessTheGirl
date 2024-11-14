@@ -8,6 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Joanna: My favourtie hobbies are anything sport related. I particulary enjoy horse-riding and swimming. I also enjoy watching Formula 1.
+          Erin: My favourite hobby is playing guitar. I love to play gigs with my friends.
         </p>
         <a
           className="App-link"
