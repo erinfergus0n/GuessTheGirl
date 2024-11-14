@@ -13,3 +13,7 @@ I grew up by the water in Northern Ireland and its always been my favourite thin
 Nesrin:
 My favorite hobby is reading. <br>
 ...but I always end up buying way more books than I can actually read!
+
+Joanna:
+My favourtie hobbies are anything sport related. <br>
+I particulary enjoy horse-riding and swimming. I also enjoy watching Formula 1.
