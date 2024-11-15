@@ -37,3 +37,9 @@ Our next step is to create a final collaboratve wireframe including prioritised 
 ![annie-wireframe](../Wireframes/annie-wireframe.png)
 
 ![sruti-wireframe](../Wireframes/sruti-wireframe.png)
+
+![nesrin-wireframe-version1](../Wireframes/nesrin-wireframe-version1.png)
+[Figma-wireframe-version1](https://www.figma.com/design/XzV3xibhm7kNMsxS1kssTi/CFG-group-4-wireframe?node-id=0-1&t=MLgkJZa6ecmixBF3-1)
+
+![nesrin-wireframe-version2](../Wireframes/nesrin-wireframe-version2.png)
+[Figma-wireframe-version2](https://www.figma.com/design/XzV3xibhm7kNMsxS1kssTi/CFG-group-4-wireframe?node-id=2014-2&t=MLgkJZa6ecmixBF3-1)
