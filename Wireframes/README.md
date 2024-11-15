@@ -35,3 +35,5 @@ Our next step is to create a final collaboratve wireframe including prioritised 
 ![laura-wireframe](../Wireframes/laura-wireframe.jpg)
 
 ![annie-wireframe](../Wireframes/annie-wireframe.png)
+
+![sruti-wireframe](../Wireframes/sruti-wireframe.png)
