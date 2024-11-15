@@ -30,3 +30,5 @@ Our next step is to create a final collaboratve wireframe including prioritised 
 - User review/testimonials 
 
 
+![erin-wireframe](../Wireframes/erin-wireframe.png)
+
