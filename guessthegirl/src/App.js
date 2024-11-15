@@ -12,6 +12,7 @@ function App() {
           Annie: My favourite hobby is baking. I enjoy baking because it can be hard to find good vegan bakes.
           Nesrin: My favourite hobby is reading and buying too many books. I read because I find it relaxing.
           Sruti: My favourite hobby is cooking. I love doing this as I get to eat good food at the end!
+          Laura: My favourite hobby is swimming. I grew up by the water and this is something I have always done to relax.
         </p>
         <a
           className="App-link"
