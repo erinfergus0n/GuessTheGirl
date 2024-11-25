@@ -33,8 +33,14 @@
 // App.js
 import React from 'react';
 import './App.css'; // Import the CSS file for styling
+import { useNavigate } from "react-router-dom";  // Importing useNavigate for navigation
 
 const App = () => {
+  const navigate = useNavigate();  // Initialise navigate function
+
+  const goToDifficultyPage = () => {
+    navigate("/difficulty");  // Navigate to the Difficulty page
+  };
   return (
     <div>
       <div className="app_header">Guess the Girl</div>
@@ -43,8 +49,9 @@ const App = () => {
         A classic game of deduction using all your <br />
         favourite female artists
       </div>
+className
 
-      <button className="play_button">Play</button>
+      <button className="play_button" onClick={goToDifficultyPage}>Play</button>
       <button className="how_to_button">How to Play</button>
     </div>
   );
