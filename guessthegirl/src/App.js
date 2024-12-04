@@ -34,6 +34,7 @@
 import React from 'react';
 import './App.css'; // Import the CSS file for styling
 import { useNavigate } from "react-router-dom";  // Importing useNavigate for navigation
+import Footer from './components/footer';
 
 const App = () => {
   const navigate = useNavigate();  // Initialise navigate function
@@ -53,8 +54,10 @@ className
 
       <button className="play_button" onClick={goToDifficultyPage}>Play</button>
       <button className="how_to_button">How to Play</button>
+
+      <Footer /> {/* Adds the Footer component to the bottom of the page */}
     </div>
   );
 }
-
+// Imported footer component
 export default App;

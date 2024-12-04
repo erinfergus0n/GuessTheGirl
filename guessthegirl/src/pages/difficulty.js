@@ -1,4 +1,6 @@
+import React from 'react';
 import './difficulty.css'; // Import the CSS file for styling
+import Footer from '../components/footer';
 
 const DifficultyPage = () => {
 return (
@@ -16,9 +18,11 @@ return (
 <div className ="DifficultyLevel">
   <button className="difficulty-button">Hard</button> 
   <p>3 guesses</p> 
+  <Footer /> 
   </div> 
   </div> 
   </div> 
   )
 }
+
    export default DifficultyPage;
