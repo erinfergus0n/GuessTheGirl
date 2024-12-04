@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";  // Importing React Router components
-import Difficulty from "./difficulty";  // Import the new Difficulty component
+import Difficulty from "./pages/difficulty";  // Import the new Difficulty component
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
