@@ -1,0 +1,107 @@
+/* Stlying for the header */
+.header { 
+    display: flex; /* Use flexbox for layout */ 
+    justify-content: space-between; /* Ensures that items will have space between them */ 
+    align-items: center; /* Ensures items are aligned in the center */ 
+    box-sizing: border-box;
+    padding: 10px 20px; /* Adds padding to the header */
+    background-color: black; /* Set background color */ 
+    position: fixed; /* Ensures a fixed position for the header */
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px; /* Sets the height of the header */ 
+    width: 100%; /* Sets width of header */ 
+    box-sizing: border-box; /* Ensures padding is included in width */ 
+}
+
+/* Styling for left side of the header */
+  .header-left { 
+    display: flex; /* Use flexbox for layout */ 
+  }
+  
+  /* Styling for accessing the nav bar */
+  .navbar-activate { 
+    font-size: 30px; /* Sets the size of the icon to access the navigation bar */
+    cursor: pointer; /* Sets the cursor to a pointer when users hover over the hamburger icon */
+    background: none; /* Sets no background */
+    border: none; /* Ensures there is no border styling applied */
+    color: #FFB0F2; /* Sets the background colour for the navigation menu */
+    margin: 0; /* Sets no margin */
+    margin-left: 0; /* Sets no left margin */
+    padding: 0; /* Ensures there is no padding */
+  }
+
+  /* Style for the right side of the header */
+  .header-right { 
+    display: flex; /* Use flexbox for layout */ 
+    align-items: center; /* Ensures items are aligned in the center */ 
+    justify-content: flex-end; /* Align items to the far right */ 
+    margin-right: 10px; /* Ensure spacing from the edge */ 
+}
+  
+  /* Styling for the navigation bars exit button*/
+  .exit-button {
+    font-size: 30px; /* Sets the size of the exit button */
+    cursor: pointer; /* Sets the cursor to a pointer when users hover over the exit button */
+    top: 15px; /* Helps to set the positioning of the exit button */
+    left: 6px;/* Helps to set the positioning of the exit button */
+    background: none; /* Sets no styling */
+    border: none; /* Ensures there is no border styling applied */
+    color: black; /* Sets the colour of the exit button */
+  }
+
+  .exit-button:hover {
+    font-size: 35px; /*Applies a larger font size when users hover over the exit button */
+  }
+  
+  .nav {
+    position: fixed; /* Ensures a fixed position for the navigation menu */
+    top: 0;
+    left: 0;
+    height: 100%; /* Sets height of the navigation menu */
+    width: 250px; /* Sets width of the navigationn menu */
+    max-width: 70%;
+    transform: translateX(-100%); /* Enables the nav menu to slide out of view */
+    z-index: 1000;
+  }
+  
+  /* Styling for when the navigation bar is opened*/
+  .nav.open {
+    transform: translateX(0); /* Displays navigation menu */
+    background-color: #FFB0F2; /* Sets background colour */
+    opacity: 1; /* Sets the background to opaque */
+    height: 100%; /* Sets the navigation bar height to 100% when opened */
+  }
+  
+  /* Styling for the links in the navigation bar */
+  .nav a {
+    display: block; /* Sets links to a block display, ensures they are all displayed on a seperate line */
+    padding: 16px; /* Adds adding to the links */
+    color: black; /* Sets the colour of the links */
+    text-decoration: none; /* Ensures the links aren't underlined */
+    font-size: 20px; /* Sets the font size of the links */
+  }
+  
+  .nav a:hover {
+    font-size: 25px; /* When users hover over the text in the navigation bar, it will get bigger */
+  }
+
+  /* Styling for the GTG logo within the header */
+  .logo {
+    height: 25px; /* Sets the height for the logo */
+    width: auto; /* Auto sets the width - The browser calculates the width */
+    margin-left: 10px; /* Add a margin to the left side of the logo */
+    margin-top: 5px; /* Add a margin to the top of the logo - used to move the image to be in line with the hamburger menu icon */
+  }
+
+  /* Styling for the help icon */
+  .help-icon {
+    height: 30px; /* Set the height of the icon */
+    width: auto; /* Auto sets the width - The browser calculates the width */
+    margin-left: 10px; /* Add margin to the left of icon for spacing */ 
+    display: inline-block; /* Displays an element as an inline-level block container */
+    margin-top: 10px; /* Add a margin to the top of the icon - used to move the image to be in line with the content in header-left */
+  }
+  
+  

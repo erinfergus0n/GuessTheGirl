@@ -35,6 +35,9 @@ import React from 'react';
 import './App.css'; // Import the CSS file for styling
 import { useNavigate } from "react-router-dom";  // Importing useNavigate for navigation
 import Footer from './components/footer';
+import NavigationBar from './components/NavBar';
+
+<NavigationBar />
 
 const App = () => {
   const navigate = useNavigate();  // Initialise navigate function
@@ -44,6 +47,7 @@ const App = () => {
   };
   return (
     <div>
+      <NavigationBar />
       <div className="app_header">Guess the Girl</div>
 
       <div className="app_font">
