@@ -1,10 +1,12 @@
 import React from 'react';
 import './difficulty.css'; // Import the CSS file for styling
 import Footer from '../components/footer';
+import NavigationBar from '../components/NavBar';
 
 const DifficultyPage = () => {
 return (
 <div>
+<NavigationBar />
 <div className="app_header">Select <br></br>difficulty level</div>
 <div className="DifficultyContainer"> 
   <div className ="DifficultyLevel">
