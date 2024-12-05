@@ -2,7 +2,8 @@
 body {
   background-color: black; /* Set the background color of the page */
   font-family: Arial, Helvetica, sans-serif; /* Set the font for the page */
- 
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
   display: flex; /* Use flexbox for layout */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
