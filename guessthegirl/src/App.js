@@ -37,8 +37,6 @@ import { useNavigate } from "react-router-dom";  // Importing useNavigate for na
 import Footer from './components/footer';
 import NavigationBar from './components/NavBar';
 
-<NavigationBar />
-
 const App = () => {
   const navigate = useNavigate();  // Initialise navigate function
 
