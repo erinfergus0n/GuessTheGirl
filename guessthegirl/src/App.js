@@ -37,6 +37,7 @@ import { useNavigate } from "react-router-dom";  // Importing useNavigate for na
 import Footer from './components/footer';
 import NavigationBar from './components/NavBar';
 
+
 const App = () => {
   const navigate = useNavigate();  // Initialise navigate function
 
@@ -52,7 +53,7 @@ const App = () => {
         A classic game of deduction using all your <br />
         favourite female artists
       </div>
-className
+
 
       <button className="play_button" onClick={goToDifficultyPage}>Play</button>
       <button className="how_to_button">How to Play</button>

@@ -32,7 +32,7 @@ const NavigationBar = (props) => {
           <FontAwesomeIcon icon={faTimes} />
         </button>
         <a href="https://www.facebook.com/?locale=en_GB">How to play</a>
-        <a href="https://www.facebook.com/?locale=en_GB">About us</a>
+        <a href="/about">About us</a>
         <a href="https://www.facebook.com/?locale=en_GB">Feedback</a>
         <a href="https://www.facebook.com/?locale=en_GB">Suggest an artist</a>
       </div>
