@@ -4,6 +4,7 @@ import './index.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";  // Importing React Router components
 import Difficulty from "./pages/difficulty";  // Import the new Difficulty component
 import AboutPage from './pages/about'; // Import the 'About' page
+import Game from './pages/easygame';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Creators from './pages/about';
@@ -15,6 +16,7 @@ root.render(
       <Route path="/" element={<App />} />         {/* The Home page */}
       <Route path="/difficulty" element={<Difficulty />} />  {/* The Difficulty page */}
       <Route path="/about" element={<Creators />} /> {/*The About page */}
+      <Route path="/easygame" element={<Game />} /> {/*The easy game page */}
     </Routes>
   </Router>
 );
