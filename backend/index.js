@@ -1,38 +1,42 @@
+//SEE BACKEND/README FOR INSTRUCTIONS
 
-//SETUP
 
-//ENSURE YOU HAVE NODE MODULES INSTALLED
 const express = require("express");
-const mysql = require("mysql2");
+const mysql = require("mysql2")
 
 const app = express()
 app.use(express.json())
 
+
 //REPLACE PASSWORD WITH YOUR MYSQLWORKBENCH PASSWORD
-const db = mysql.createConnection({
+const pool = mysql.createPool({
     host: "localhost",
     user: "root",
-    password: "",
-    database: "GTG"
+    password: "123Coldplay",
+    database: "GTG",
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
 })
 
 //TEST CONNECTION
-db.connect((err) => {
+
+pool.getConnection((err, connection) => {
     if (err) {
         console.error("Database connection failed:", err);
     } else {
-        console.log("Database connected successfully!");
+        console.log("Database connection successful!");
+        connection.release();
     }
 });
 
+
 //SETS PORT AND LOGS MESSAGE TO CONSOLE WHEN SERVER CONNECTION SUCCESSFUL
 
-if (process.env.NODE_ENV !== "test") {
-    const PORT = 3300;
-    app.listen(3300, () => {
-        console.log(`Connected to backend on PORT ${PORT}!`)
-    })
-}
+const PORT = 3300;
+app.listen(PORT, () => {
+    console.log(`Connected to backend on PORT ${PORT}!`)
+});
 
 
 //SIMPLE ENDPOINT TO CHECK CONNECTION
@@ -43,16 +47,16 @@ app.get("/", (req, res) => {
 //SHOW ALL ARTISTS IN DATABASE
 app.get("/artists", (req, res) => {
     const sql = 'SELECT * FROM artists';
-    db.query(sql, (err, result) => {
+    pool.query(sql, (err, result) => {
         if (err) {
             res.status(500).send(err);
         } else {
-            res.json(result);
+            res.status(200).json(result);
         }
     });
 });
 
-module.exports = { app, db };
+
 
 
 
@@ -61,11 +65,11 @@ module.exports = { app, db };
 //GET RANDOM ARTIST
 app.get("/artists/random", (req, res) => {
     const sql = 'SELECT * FROM artists ORDER BY RAND() LIMIT 1';
-    db.query(sql, (err, result) => {
+    pool.query(sql, (err, result) => {
         if (err) {
             res.status(500).send(err);
         } else {
-            res.json(result[0]);
+            res.status(200).json(result[0]);
         }
     });
 });
@@ -79,7 +83,7 @@ app.post("/artists/guess", (req, res) => {
     }
 
     const sql = 'SELECT * FROM artists WHERE id = ?';
-    db.query(sql, [correctArtistId], (err, result) => {
+    pool.query(sql, [correctArtistId], (err, result) => {
         if (err) {
             res.status(500).send(err);
         } else if (result.length === 0) {
@@ -94,3 +98,5 @@ app.post("/artists/guess", (req, res) => {
     });
 });
 
+
+module.exports = { app, db: pool };

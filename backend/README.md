@@ -2,7 +2,13 @@
 
 1. `npm install express mysql2`
 
-2. In guessthegirl/backend/index.js - insert your MySQLWorkbench password.
+2. Ensure there is a line for "type": "module", in backend/package.json
+```
+"main": "index.js",
+"type": "module",
+```
+
+3. In guessthegirl/backend/index.js - insert your MySQLWorkbench password.
 
 ```
     host: "localhost",
@@ -11,11 +17,11 @@
     database: "GTG"
 ```
 
-3. In the terminal - `cd backend`
+4. In the terminal - `cd backend`
 
-4. Restart the server using `Ctrl+C` to ensure you have nothing else running on the target port.
+5. Restart the server using `Ctrl+C` to ensure you have nothing else running on the target port.
 
-5. Run `node index.js` to start the server.
+6. Run `node index.js` to start the server.
 
 
 ## TESTING ENDPOINTS IN POSTMAN
@@ -54,4 +60,5 @@
 
 ## RUNNING TESTS FOR THE BACKEND
 
-`npm install --save-dev jest supertest`
+1. `npm install --save-dev jest supertest`
+2. `cd backend` then `npm test`
