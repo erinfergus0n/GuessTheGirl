@@ -1,14 +1,30 @@
+const dotenv = require('dotenv')
+dotenv.config()
+console.log(`Your MySQL user is ${process.env.DB_USER}`)
+console.log(`Your password is ${process.env.DB_PASSWORD}`)
+
+
+const mysql = require('mysql2');
 const express = require('express');
 const cors = require('cors');
-const dotenv = require('dotenv');
-dotenv.config();  // Loading environment variables from .env file
-const db = require('./db');  // Importing the database connection from db.js
 
 const app = express();
 const port = process.env.PORT || 5001;
 
-app.use(cors());  // Allow cross-origin requests
-app.use(express.json());  // Parse incoming JSON requests
+app.use(cors());  
+app.use(express.json());  
+
+const pool = mysql.createPool({
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
+});
+const db = pool.promise(); 
+
 
 // Connect to the database
 db.getConnection()
@@ -20,7 +36,20 @@ db.getConnection()
     console.error('Error connecting to the database:', err.stack);
   });  
 
-// Endpoint to get a random "daily artist"
+
+module.exports = db;
+
+
+
+
+
+
+
+
+
+
+
+// Endpoint to get a random artist of the day
 app.get('/api/daily-artist', (req, res) => {
   db.query('SELECT * FROM artists ORDER BY RAND() LIMIT 1')
     .then(results => {
@@ -32,6 +61,10 @@ app.get('/api/daily-artist', (req, res) => {
     });
 });
 
+
+
+
+
 // POST endpoint for handling user guesses
 app.post('/api/guess', (req, res) => {
   console.log('Received guess request:', req.body);
@@ -41,11 +74,10 @@ app.post('/api/guess', (req, res) => {
     return res.status(400).json({ error: 'Both guess and correctArtistId are required.' });
   }
 
-  // Normalizing guess to lowercase to handle case insensitivity
-  const normalizedGuess = guess.trim().toLowerCase();  
-  console.log('Normalized guess:', normalizedGuess); 
+  const normalisedGuess = guess.trim().toLowerCase();  
+  console.log('Normalised guess:', normalisedGuess); 
 
-  db.query('SELECT * FROM artists WHERE LOWER(name) = ?', [normalizedGuess])
+  db.query('SELECT * FROM artists WHERE LOWER(name) = ?', [normalisedGuess])
     .then(guessedArtistResults => {
       const guessedArtist = guessedArtistResults[0][0] || guessedArtistResults[0];
 
@@ -89,6 +121,14 @@ app.post('/api/guess', (req, res) => {
       res.status(500).json({ error: 'Database error while fetching guessed artist' });
     });
 }); 
+
+
+
+
+
+
+
+
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
