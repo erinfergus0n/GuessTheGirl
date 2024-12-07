@@ -13,6 +13,11 @@ const DifficultyPage = () => {
 return (
 <div>
 <NavigationBar />
+   <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
 <div className="app_header">Select <br></br>difficulty level</div>
 <div className="DifficultyContainer"> 
   <div className ="DifficultyLevel">
