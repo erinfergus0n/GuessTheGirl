@@ -2,22 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";  // Importing React Router components
-import Difficulty from "./pages/difficulty";  // Import the new Difficulty component
-import AboutPage from './pages/about'; // Import the 'About' page
 import Game from './pages/easygame';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Creators from './pages/about';
+import DifficultyPage from './pages/difficulty';
+import ConstructionPage from './components/construction';
+import SuggestionPage from './pages/suggestion';
+import FeedbackPage from './pages/feedback';
+import StatsPage from './pages/stats';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <Router>
     <Routes>
       <Route path="/" element={<App />} />         {/* The Home page */}
-      <Route path="/difficulty" element={<Difficulty />} />  {/* The Difficulty page */}
+      <Route path="/difficulty" element={<DifficultyPage />} />  {/* The Difficulty page */}
       <Route path="/about" element={<Creators />} /> {/*The About page */}
       <Route path="/easygame" element={<Game />} /> {/*The easy game page */}
-    </Routes>
+      <Route path="/stats" element={<StatsPage />} /> {/* The stats page */}
+      <Route path="/suggestion" element={<SuggestionPage />} /> {/*The suggest an artist page */}
+      <Route path="/feedback" element={<FeedbackPage />} /> {/*The feedback page */}
+          </Routes>
   </Router>
 );
 
