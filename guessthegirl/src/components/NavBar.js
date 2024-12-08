@@ -6,6 +6,7 @@ import logo from '../logo.png'; // Imports the team logo
 import help from '../help.png'; // Imports the image for the help button within the header
 import { Outlet, Link } from "react-router-dom";
 
+
 const NavigationBar = (props) => { 
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -20,14 +21,17 @@ const NavigationBar = (props) => {
           <button className="navbar-activate" onClick={activateNavbar}> 
             <FontAwesomeIcon icon={faBars} />
           </button>
+          <Link to="/"> {/* Links image to the home page */}
           <img src={logo} alt="Logo" className="logo" />
+          </Link>
         </div>
         <div className="header-right">
-        <a href="https://www.facebook.com/?locale=en_GB">
+          <Link to="/howtoplay">
            <img src={help} alt="How to play Icon" className="help-icon" /> 
-           </a>
+           </Link>
            </div>
       </header>
+
       <div className={`nav ${isNavOpen ? 'open' : ''}`}>
         <button className="exit-button" onClick={activateNavbar}>
           <FontAwesomeIcon icon={faTimes} />
@@ -37,10 +41,13 @@ const NavigationBar = (props) => {
             <Link to="/"> Home</Link>
           </li>
           <li>
-            <Link to="/stats"> Statistics</Link>
+            <Link to="/about"> About Us</Link>
           </li>
           <li>
-            <Link to="/about"> About Us</Link>
+            <Link to="/howtoplay"> How to Play</Link>
+          </li>
+          <li>
+            <Link to="/stats"> Statistics</Link>
           </li>
           <li>
             <Link to="/feedback"> Feedback</Link>

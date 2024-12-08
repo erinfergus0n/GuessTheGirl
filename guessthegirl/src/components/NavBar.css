@@ -50,6 +50,7 @@
     background: none; /* Sets no styling */
     border: none; /* Ensures there is no border styling applied */
     color: black; /* Sets the colour of the exit button */
+    padding-bottom: 30px;
   }
 
   .exit-button:hover {
@@ -82,7 +83,8 @@
     color: black; /* Sets the colour of the links */
     text-decoration: none; /* Ensures the links aren't underlined */
     font-size: 20px; /* Sets the font size of the links */
-    text-align: left;
+    text-align:center;
+   
   }
   
   .nav a:hover {
