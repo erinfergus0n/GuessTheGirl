@@ -8,8 +8,18 @@ const AboutPage = () => {
   return (
   <div>
     <NavigationBar />
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
   <div className="app_header"> Meet the Creators </div>
   <Creators />
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
   <Footer />
   </div>  
   )

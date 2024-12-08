@@ -6,6 +6,8 @@ const HowToPage = () => {
 return (
 <div>
 <NavigationBar />
+<br></br>
+<br></br>
 <div className="app_header">How to Play</div>
 <div className="HowToDifficultyContainer"> 
     <div className="pink-box">
