@@ -21,16 +21,16 @@ return (
 <div className="app_header">Select <br></br>difficulty level</div>
 <div className="DifficultyContainer"> 
   <div className ="DifficultyLevel">
-  <button className="difficulty-button" onClick={goToEasyGame}>Easy</button> 
-  <p>10 guesses</p> 
+  <button className="difficulty-button" id="difficulty-button-easy" onClick={goToEasyGame}>Easy</button> 
+  <p>10 guesses.</p> 
 </div> 
   <div className ="DifficultyLevel">
-  <button className="difficulty-button">Medium</button> 
-  <p>6 guesses</p> 
+  <button className="difficulty-button" id="difficulty-button-medium">Medium</button> 
+  <p>6 guesses. <br></br> Coming soon. <br></br></p> 
 </div>
 <div className ="DifficultyLevel">
-  <button className="difficulty-button">Hard</button> 
-  <p>3 guesses</p> 
+  <button className="difficulty-button" id="difficulty-button-hard">Hard</button> 
+  <p>3 guesses. <br></br> Coming soon. <br></br></p> 
   <Footer /> 
   </div> 
   </div> 
