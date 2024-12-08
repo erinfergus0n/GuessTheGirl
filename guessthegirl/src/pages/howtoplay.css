@@ -22,7 +22,8 @@ body {
     margin-bottom: 2vw; /* Add spacing below the header */
     text-align: center; /* Ensure text is centered */
   }
-  
+
+ /* Styling for the how to container */
   .HowToContainer { 
     display: flex; 
     flex-direction: row; /* Ensures that the items within the container are displayed in a row on larger screens */
@@ -30,6 +31,7 @@ body {
     color: black;
   }
 
+/* Styling for the background container */
   .pink-box {
     background-color: #fcbef2;
     color: black !important; /* Explicitly set text color */
@@ -43,12 +45,14 @@ body {
     
   }
 
+/* Styling for the pink box elements */
   .pink-box h1,
   .pink-box p,
   .pink-box li {
     color: black; /* Ensure all text is black */
   }
 
+/* Styling for various text colors within the box */
 .green-text {
     color: green;
   }
@@ -68,10 +72,12 @@ body {
     } 
   } 
 
+/* Styling for H1 elements */
   h1 {
     margin-bottom: 20px;
   }
-  
+
+/* Styling for the list */
   ul {
     text-align: center;
     list-style-type: none; /* Removes bullets */
