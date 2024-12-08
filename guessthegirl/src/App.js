@@ -44,6 +44,11 @@ const App = () => {
   const goToDifficultyPage = () => {
     navigate("/difficulty");  // Navigate to the Difficulty page
   };
+
+  const goToHowToPlayPage = () => {
+    navigate("/howtoplay"); //Navigate to the How to Play page
+  };
+  
   return (
     <div>
       <NavigationBar />
@@ -61,7 +66,7 @@ const App = () => {
 
 
       <button className="play_button" onClick={goToDifficultyPage}>Play</button>
-      <button className="how_to_button">How to Play</button>
+      <button className="how_to_button" onClick={goToHowToPlayPage}>How to Play</button>
 
       <Footer /> {/* Adds the Footer component to the bottom of the page */}
     </div>

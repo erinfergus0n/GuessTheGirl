@@ -1,8 +1,11 @@
 import './howtoplay.css'; // Import the CSS file for styling
+import Footer from '../components/footer';
+import NavigationBar from '../components/NavBar';
 
 const HowToPage = () => {
 return (
 <div>
+<NavigationBar />
 <div className="app_header">How to Play</div>
 <div className="HowToDifficultyContainer"> 
     <div className="pink-box">
@@ -36,6 +39,7 @@ return (
       <li>You will also have the option to <strong>Give Up</strong> if you wish for the answer to be revealed.</li>
     </ul>
     <p>Enjoy solving the mystery and guessing the girl! 🎶</p>
+    <Footer />
   </div>
   </div>
   </div>
