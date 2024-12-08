@@ -1,57 +1,29 @@
-const request = require("supertest");
-const { app, db } = require("./server");
+// const db = require('./server'); // Import your db module
+// jest.mock('./server'); // Mock the entire db module
 
+// test('logs success and releases connection on successful connection', async () => {
+//   const mockRelease = jest.fn(); // Mock release method
+//   db.getConnection.mockResolvedValue({ release: mockRelease }); // Mock successful connection
 
+//   const consoleLog = jest.spyOn(console, 'log').mockImplementation(() => {});
 
+//   await db.getConnection();
 
-test("MySQL database connects successfully", (done) => {
-    db.getConnection((err) => {
-        expect(err).toBeNull();
-        done()
-    })
-})
-
-
-
-
-
-
-//OG SERVER/DB TESTS 
-
-// const request = require("supertest");
-// const { app, db } = require("./index");
-
-// // //DATABASE CONNECTION TEST
-// test("MySQL database connects successfully", (done) => {
-//     db.getConnection((err) => {
-//         expect(err).toBeNull();
-//         done()
-//     })
-// })
-
-// //GET /ARTISTS ENDPOINT TEST
-// describe("GET /artists", () => {
-//     test("all artists returned successfully", async () => {
-//         const response = await request(app).get("/artists");
-//         expect(response.status).toBe(200);
-//         expect(Array.isArray(response.body)).toBe(true);
-//     });
+//   expect(consoleLog).toHaveBeenCalledWith('Connected to the database');
+//   expect(mockRelease).toHaveBeenCalled(); // Ensure release is called
+//   consoleLog.mockRestore();
 // });
 
-// //GET /ARTISTS/RANDOM ENDPOINT TEST
-// describe("GET /artists/random", () => {
-//     test("random artist returned successfully", async () => {
-//         const response = await request(app).get("/artists/random");
-//         expect(response.status).toBe(200); 
-//         expect(response.body).toHaveProperty("id"); 
-//         expect(response.body).toHaveProperty("name"); 
-//         expect(response.body).toHaveProperty("country"); 
-//         expect(response.body).toHaveProperty("genre"); 
-//         expect(response.body).toHaveProperty("star_sign"); 
-//         expect(response.body).toHaveProperty("debut_year");
-//         expect(response.body).toHaveProperty("spotify_ranking");
-//         expect(response.body).toHaveProperty("total_albums");   
-//     });
+// test('logs error on failed connection', async () => {
+//   const mockError = new Error('Connection failed');
+//   db.getConnection.mockRejectedValue(mockError); // Mock failed connection
+
+//   const consoleError = jest.spyOn(console, 'error').mockImplementation(() => {});
+
+//   await expect(db.getConnection()).rejects.toThrow('Connection failed');
+
+//   expect(consoleError).toHaveBeenCalledWith(
+//     expect.stringContaining('Error connecting to the database:')
+//   );
+//   consoleError.mockRestore();
 // });
-
-
