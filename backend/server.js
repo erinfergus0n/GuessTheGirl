@@ -1,19 +1,18 @@
+// Dependencies
 const dotenv = require('dotenv')
 dotenv.config()
 console.log(`Your MySQL user is ${process.env.DB_USER}`)
 console.log(`Your password is ${process.env.DB_PASSWORD}`)
-
-
 const mysql = require('mysql2');
 const express = require('express');
 const cors = require('cors');
-
 const app = express();
 const port = process.env.PORT || 5001;
 
 app.use(cors());  
 app.use(express.json());  
 
+// Creating a mySQL connection
 const pool = mysql.createPool({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
@@ -26,7 +25,7 @@ const pool = mysql.createPool({
 const db = pool.promise(); 
 
 
-// Connect to the database
+// Connecting to the SQL database
 db.getConnection()
   .then(connection => {
     console.log('Connected to the database');
@@ -36,17 +35,7 @@ db.getConnection()
     console.error('Error connecting to the database:', err.stack);
   });  
 
-
 module.exports = db;
-
-
-
-
-
-
-
-
-
 
 
 // Endpoint to get a random artist of the day
@@ -60,9 +49,6 @@ app.get('/api/daily-artist', (req, res) => {
       res.status(500).json({ error: 'Error fetching daily artist' });
     });
 });
-
-
-
 
 
 // POST endpoint for handling user guesses
