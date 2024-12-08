@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './game.css';
+import { useNavigate } from "react-router-dom";  
+
 
 const Game = () => {
   const [artists, setArtists] = useState(null);
@@ -14,6 +16,11 @@ const Game = () => {
   const [showPopup, setShowPopup] = useState(false); 
   const [showGiveUpPopup, setShowGiveUpPopup] = useState(false); 
   const maxGuesses = 10;
+
+  const navigate =useNavigate();
+  const goToHome =() => {
+    navigate("/");
+  };
 
   useEffect(() => {
     axios.get('http://localhost:5001/api/daily-artist')
@@ -155,6 +162,8 @@ const Game = () => {
             </div>
           ))}
 
+
+
           <button className="give-up" onClick={handleGiveUp}>Give up</button>
 
           {showPopup && (
@@ -169,7 +178,7 @@ const Game = () => {
                 <div className="popup-buttons">
                   <button className="popup-button">View Results</button>
                   <button className="popup-button">Share Results</button>
-                  <button className="popup-button">Return to Homepage</button>
+                  <button className="popup-button" onClick={goToHome}>Return to Homepage</button>
                 </div>
               </div>
             </div>
@@ -186,7 +195,7 @@ const Game = () => {
                 </div>
                 <p>Better luck tomorrow!</p>
                 <div className="popup-buttons">
-                  <button className="popup-button">Return to Homepage</button>
+                  <button className="popup-button" onClick={goToHome}>Return to Homepage</button>
                 </div>
               </div>
             </div>
