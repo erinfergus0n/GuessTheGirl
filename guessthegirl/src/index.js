@@ -12,6 +12,8 @@ import FeedbackPage from './pages/feedback';
 import StatsPage from './pages/stats';
 import HowToPage from './pages/howtoplay';
 
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <Router>
@@ -24,6 +26,7 @@ root.render(
       <Route path="/suggestion" element={<SuggestionPage />} /> {/*The suggest an artist page */}
       <Route path="/feedback" element={<FeedbackPage />} /> {/*The feedback page */}
       <Route path="/howtoplay" element={<HowToPage />} /> {/*The how to page */}
+      
           </Routes>
   </Router>
 );
