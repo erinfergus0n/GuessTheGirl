@@ -1,88 +1,88 @@
-/* Body styling */
+
 body {
-  background-color: black; /* Set the background color of the page */
-  font-family: Arial, Helvetica, sans-serif; /* Set the font for the page */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  display: flex; /* Use flexbox for layout */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  flex-direction: column; /* Align content in column format */
-  min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+  background-color: black; 
+  font-family: Arial, Helvetica, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  min-height: 100vh; 
   padding-top: 70px;
   overflow-y: auto;
   
 }
 
-/* Styling for the main content text */
+
 .app_font {
-  color: #FFB0F2; /* Set text color */
-  font-size: 2vw; /* Use viewport width for scaling font size */
-  text-align: center; /* Centers the text horizontally */
-  line-height: 1.6; /* Adjust line height for better spacing between lines */
-  margin: 10px; /* Add margin for spacing */
-  width: 100%; /* Ensure the text takes up full width */
+  color: #FFB0F2; 
+  font-size: 2vw; 
+  text-align: center; 
+  line-height: 1.6; 
+  margin: 10px; 
+  width: 100%; 
 }
 
-/* Styling for the header with gradient text */
+
 .app_header {
-  font-size: 6vw; /* Use viewport width for scaling text size dynamically */
-  font-weight: bold; /* Make text bold */
-  background: linear-gradient(to right, #BF60FF, #FF91ED, #FFB26E); /* Apply gradient background */
-  -webkit-background-clip: text; /* Clip the background to the text (for Chrome, Safari) */
-  -webkit-text-fill-color: transparent; /* Make the text color transparent to show the gradient */
-  background-clip: text; /* Apply gradient effect to text */
-  margin-bottom: 2vw; /* Add spacing below the header */
-  text-align: center; /* Ensure text is centered */
+  font-size: 6vw; 
+  font-weight: bold; 
+  background: linear-gradient(to right, #BF60FF, #FF91ED, #FFB26E); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  margin-bottom: 2vw; 
+  text-align: center; 
 }
 
-/* Styling for the play button */
+
 .play_button {
-  background-color: #FFB0F2; /* Set background color of the button */
-  padding: 1.5vw; /* Use viewport width for padding */
-  font-size: 1.5vw; /* Use viewport width for font size */
-  font-weight: semi-bold; /* Set font weight */
-  border-radius: 12px; /* Round the corners of the button */
-  border: 0px; /* Remove any border */
-  margin: 1vw 0; /* Add vertical margin to space out the buttons */
-  text-align: center; /* Center text inside the button */
-  width: 100%; /* Make the button take up the full width of its container */
-  max-width: 600px; /* Limit the max width to a reasonable value */
-  display: block; /* Make the button a block element for stacking */
-  margin-left: auto; /* Center the button horizontally */
-  margin-right: auto; /* Center the button horizontally */
+  background-color: #FFB0F2; 
+  padding: 1.5vw; 
+  font-size: 1.5vw; 
+  font-weight: semi-bold; 
+  border-radius: 12px; 
+  border: 0px; 
+  margin: 1vw 0; 
+  text-align: center; 
+  width: 100%; 
+  max-width: 600px; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
   cursor: pointer;
 }
 
-/* Styling for the "How to" button with gradient border */
+
 .how_to_button {
-  position: relative; /* Ensure the button can be positioned relative to its parent */
-  background-color: black; /* Set the background color of the button */
-  color: #FF91ED; /* Set text color */
-  padding: 1.5vw; /* Use viewport width for padding */
-  font-size: 1.5vw; /* Use viewport width for font size */
-  font-weight: semi-bold; /* Set font weight */
-  border: none; /* Remove default border */
-  border-radius: 12px; /* Round the corners of the button */
-  margin: 1vw 0; /* Add vertical margin to space out the buttons */
-  text-align: center; /* Ensure text is centered */
-  width: 100%; /* Make the button take up the full width of its container */
-  max-width: 600px; /* Limit the max width to a reasonable value */
-  display: block; /* Make the button a block element for stacking */
-  margin-left: auto; /* Center the button horizontally */
-  margin-right: auto; /* Center the button horizontally */
+  position: relative; 
+  background-color: black; 
+  color: #FF91ED; 
+  padding: 1.5vw; 
+  font-size: 1.5vw; 
+  font-weight: semi-bold; 
+  border: none; 
+  border-radius: 12px; 
+  margin: 1vw 0; 
+  text-align: center; 
+  width: 100%; 
+  max-width: 600px; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
   cursor: pointer;
 }
 
-/* Apply gradient border to "How to" button using a pseudo-element */
+
 .how_to_button::before {
-  content: ''; /* Create an empty pseudo-element */
-  position: absolute; /* Position it absolutely within the button */
-  top: -0.3vw; /* Adjust position of the border, moving it slightly outside */
-  left: -0.3vw; /* Same for left position */
-  right: -0.3vw; /* Same for right position */
-  bottom: -0.3vw; /* Same for bottom position */
-  background: linear-gradient(to right, #BF60FF, #FF91ED, #FFB26E); /* Apply gradient background to the border */
-  border-radius: 14px; /* Round the corners of the border */
-  z-index: -1; /* Place the pseudo-element behind the button */
+  content: ''; 
+  position: absolute; 
+  top: -0.3vw; 
+  left: -0.3vw; 
+  right: -0.3vw; 
+  bottom: -0.3vw; 
+  background: linear-gradient(to right, #BF60FF, #FF91ED, #FFB26E); 
+  border-radius: 14px; 
+  z-index: -1; 
 }

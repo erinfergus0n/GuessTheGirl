@@ -1,13 +1,15 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import StatsPage from './difficulty';
+import StatsPage from './stats';
 
-test('renders Difficulty page', () => {
-  const { getByText } = render(
+test('renders Stats page with header "Statistics"', () => {
+  render(
     <MemoryRouter>
       <StatsPage />
     </MemoryRouter>
   );
-  expect(getByText(/statistics/i)).toBeInTheDocument();
+  
+  const header = screen.getByText(/statistics/i, { selector: '.app_header' });
+  expect(header).toBeInTheDocument();
 });

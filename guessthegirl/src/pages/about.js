@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';// Import the CSS file for styling
+import '../App.css';
 import Footer from '../components/footer';
 import NavigationBar from '../components/NavBar';
 import Creators from '../components/CreatorInfo';

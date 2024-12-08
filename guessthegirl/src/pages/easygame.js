@@ -101,7 +101,6 @@ const Game = () => {
             </div>
           </div>
 
-          {/* Display the current guess */}
           {guessedArtist && guessCount <= maxGuesses && (
             <div className="game-container">
               <div className="name-and-attributes">
@@ -132,7 +131,6 @@ const Game = () => {
             </div>
           )}
 
-          {/* Display past guesses */}
           {previousGuesses.slice(1).map((prevGuess, index) => (
             <div key={index} className="game-container previous-guess">
               <div className="name-and-attributes">
@@ -159,7 +157,6 @@ const Game = () => {
 
           <button className="give-up" onClick={handleGiveUp}>Give up</button>
 
-          {/* Pop-Up for Correct Guess */}
           {showPopup && (
             <div className="popup">
               <div className="popup-content">
@@ -178,7 +175,6 @@ const Game = () => {
             </div>
           )}
 
-          {/* Pop-Up for Give Up */}
           {showGiveUpPopup && (
             <div className="popup">
               <div className="popup-content">

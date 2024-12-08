@@ -1,7 +1,7 @@
 import React from 'react'; 
-import './footer.css'; /* Connects component to the correct CSS file for styling*/
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';/* Allows icons from Font Awesome to be used within React component*/
-import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'; /* Allows us to specify icons from Font Awesome that will be used within the component*/
+import './footer.css'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'; 
 
 const Footer = () => {
     return (

@@ -1,4 +1,4 @@
-/* body style */
+
 body {
     font-family: Arial, Helvetica, sans-serif; 
     margin: 0; 
@@ -28,7 +28,6 @@ body {
     margin-bottom: 10px; 
   }
   
-  /* Root wrapper styles */
   #root {
     flex-direction: column; 
     align-items: center; 
@@ -46,6 +45,7 @@ body {
     margin-top: 50px; 
   }
 
+
   /* Input field styling */
   #input-field {
     padding: 15px;
@@ -58,6 +58,7 @@ body {
     color: #FFB0F2; 
     width: 300px;
   }
+
 
   /* Submit button styling */
   #submitbutton {
@@ -145,10 +146,9 @@ body {
 
 /* empty placeholder style */
   .empty-placeholder {
-    width: 16%; /* Same width as artist name to keep tiles aligned */
+    width: 16%; 
   }
   
-  /* Display the guess count */
   .guess-count {
     font-size: 1.2em; 
     font-weight: bold;
@@ -177,9 +177,8 @@ body {
   }
   
   
-  /* Create a scrollable container */
   .scrollable-container {
-    height: 100vh; /* 100% of the viewport height */
+    height: 100vh; 
     overflow-y: auto; 
     padding: 20px;
   }
@@ -266,7 +265,6 @@ body {
     font-weight: bold;
   }
   
-  /* "Give Up" button styling */
   .give-up {
     position: absolute; 
     bottom: 20px;

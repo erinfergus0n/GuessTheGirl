@@ -32,5 +32,4 @@
 
 ## RUNNING TESTS FOR THE BACKEND
 
-1. `npm install --save-dev jest supertest`
-2. `cd backend` then `npm test`
+1. `cd backend` then `npm test`
