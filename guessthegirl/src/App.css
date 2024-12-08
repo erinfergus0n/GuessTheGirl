@@ -49,6 +49,7 @@ body {
   display: block; /* Make the button a block element for stacking */
   margin-left: auto; /* Center the button horizontally */
   margin-right: auto; /* Center the button horizontally */
+  cursor: pointer;
 }
 
 /* Styling for the "How to" button with gradient border */
@@ -68,6 +69,7 @@ body {
   display: block; /* Make the button a block element for stacking */
   margin-left: auto; /* Center the button horizontally */
   margin-right: auto; /* Center the button horizontally */
+  cursor: pointer;
 }
 
 /* Apply gradient border to "How to" button using a pseudo-element */
