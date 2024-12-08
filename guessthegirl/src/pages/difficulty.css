@@ -54,7 +54,6 @@ body {
     border-radius: 10px; /* Adds a border radius to the buttoms and makes them round*/
     border: none; /* Ensures there is no border on the buttons*/
     background: #FFB0F2; /* Set the background colour of the buttons to pink*/
-    cursor: pointer; /* Changes the cursor when the user hovers over the buttons*/
   }
   
    /* Styling for the text under the buttons */
