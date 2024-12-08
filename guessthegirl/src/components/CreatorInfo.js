@@ -8,7 +8,7 @@ const Creators = () => {
     { name: "Annie", country: "Scotland", topArtist: "Gracie Abrams", favouriteHobby: "Baking", starsign: "Sagittarius", funFact: "I'm ambidextrous."},
     { name: "Erin", country: "Scotland", topArtist: "Chappell Roan", favouriteHobby: "Music", starsign: "Taurus", funFact: "I have a 970 day Duolingo streak."},
     { name: "Sruti", country: "England", topArtist: "Doja Cat", favouriteHobby: "Duolingo", starsign: "Sagittarius", funFact:"I used to work at Legoland."},
-    { name: "Joanna", country: "Scotland", topArtist: "Insert artist", favouriteHobby: "Sports", starsign: "Insert star sign", funFact: "Insert fun fact." },
+    { name: "Joanna", country: "Northern Ireland", topArtist: "Rihanna", favouriteHobby: "Horse riding", starsign: "Taurus", funFact: "I have 2 houses and 2 dogs." },
     { name: "Laura", country: "UK", topArtist: "Chappell Roan", favouriteHobby: "Swimming", starsign: "Capricorn", funFact: "I have 104 vinyl records." }
   ];
 
