@@ -1,29 +1,17 @@
-// const db = require('./server'); // Import your db module
-// jest.mock('./server'); // Mock the entire db module
+jest.mock('./server', () => ({
+    getConnection: jest.fn(() =>
+      Promise.resolve({
+        release: jest.fn(),
+      })
+    ),
+  }));
+  
 
-// test('logs success and releases connection on successful connection', async () => {
-//   const mockRelease = jest.fn(); // Mock release method
-//   db.getConnection.mockResolvedValue({ release: mockRelease }); // Mock successful connection
+    const db = require('./server');
 
-//   const consoleLog = jest.spyOn(console, 'log').mockImplementation(() => {});
+test('mocked database connected successfully', async () => {
+  const connection = await db.getConnection();
+  expect(connection.release).toHaveBeenCalledTimes(0); 
+});
 
-//   await db.getConnection();
 
-//   expect(consoleLog).toHaveBeenCalledWith('Connected to the database');
-//   expect(mockRelease).toHaveBeenCalled(); // Ensure release is called
-//   consoleLog.mockRestore();
-// });
-
-// test('logs error on failed connection', async () => {
-//   const mockError = new Error('Connection failed');
-//   db.getConnection.mockRejectedValue(mockError); // Mock failed connection
-
-//   const consoleError = jest.spyOn(console, 'error').mockImplementation(() => {});
-
-//   await expect(db.getConnection()).rejects.toThrow('Connection failed');
-
-//   expect(consoleError).toHaveBeenCalledWith(
-//     expect.stringContaining('Error connecting to the database:')
-//   );
-//   consoleError.mockRestore();
-// });

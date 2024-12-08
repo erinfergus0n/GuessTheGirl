@@ -1,13 +1,13 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import AboutPage from './difficulty';
+import StatsPage from './difficulty';
 
 test('renders Difficulty page', () => {
   const { getByText } = render(
     <MemoryRouter>
-      <AboutPage />
+      <StatsPage />
     </MemoryRouter>
   );
-  expect(getByText(/about us/i)).toBeInTheDocument();
+  expect(getByText(/statistics/i)).toBeInTheDocument();
 });
