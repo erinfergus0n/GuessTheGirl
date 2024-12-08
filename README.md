@@ -62,6 +62,7 @@ I do this because it can be hard to find good vegan baked goods.
 <li> Express.js 
 <li> Axios 
 <li> Cors
+<li> dotenv
 <li> Mysql2
 <li> Browser e.g. Chrome 
 <li> IDE e.g. VS Code 

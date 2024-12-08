@@ -10,12 +10,13 @@ body {
     align-items: center;
     overflow: hidden;
   }
-  
+
+/* paragraph style */
   p {
     color: #FF91ED; 
   }
   
-  
+/* H3 style */
   h3 {
     font-size: 1.2em; 
     font-weight: bold; 
@@ -36,7 +37,7 @@ body {
     height: 100%; 
   }
   
-  
+/* input class styling */
   .input {
     display: flex; 
     justify-content: center; 
@@ -44,6 +45,8 @@ body {
     margin-top: 50px; 
   }
 
+
+  /* Input field styling */
   #input-field {
     padding: 15px;
     font-size: 1.2em;
@@ -56,6 +59,8 @@ body {
     width: 300px;
   }
 
+
+  /* Submit button styling */
   #submitbutton {
     padding: 15px 25px; 
     font-size: 1.2em; 
@@ -66,21 +71,23 @@ body {
     cursor: pointer;
   }
   
-  
+  /* game container style */
   .game-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
   }
-  
+
+/* name and attributes class style */
   .name-and-attributes {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: flex-start;
   }
-  
+
+/* artist name text styling */
   .artist-name {
     font-weight: bold;
     font-size: 1.2em;
@@ -88,7 +95,8 @@ body {
     width: 16%;
     text-align: center;
   }
-  
+
+/* attribute titles and tiles styling */
   .attribute-titles,
   .attribute-tiles {
     display: flex;
@@ -121,19 +129,22 @@ body {
     transition: background-color 0.3s ease;
   }
   
-  
+  /* correct attribute style */
   .correct {
     background-color: #7ee66c;
   }
-  
+
+/* incorrect attribute style */
   .incorrect {
     background-color: #919191;
   }
-  
+
+/* close attribute style */
   .close {
     background-color: #FBE080;
   }
-  
+
+/* empty placeholder style */
   .empty-placeholder {
     width: 16%; 
   }
@@ -146,12 +157,14 @@ body {
     text-align: left; 
     margin-left: 30px; 
   }
-  
+
+/* previous guess style */
   .previous-guess {
     animation: slideDown 0.3s ease-in-out;
     margin-bottom: 10px;
   }
-  
+
+/* keyframes transformations and style */
   @keyframes slideDown {
     from {
         opacity: 0;
@@ -169,14 +182,15 @@ body {
     overflow-y: auto; 
     padding: 20px;
   }
-  
+
+/* html, body style */
   html, body {
     height: 100%;
     margin: 0;
     overflow: hidden; 
   }
   
-  
+  /* popup style */
   .popup {
     position: fixed;
     top: 0;
@@ -188,7 +202,8 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+
+/* popup content styling */
   .popup-content {
     background: linear-gradient(to right, #BF60FF, #FF91ED, #FFB26E);
     padding: 20px;
@@ -197,7 +212,8 @@ body {
     text-align: center;
     position: relative;
   }
-  
+
+/* popup close style */
   .popup-close {
     position: absolute;
     top: 10px;
@@ -207,12 +223,14 @@ body {
     font-size: 20px;
     cursor: pointer;
   }
-  
+
+/* popup artist style */
   .popup-artist {
     margin: 20px 0;
     color: black;
   }
-  
+
+/* artist photo placeholder style */
   .artist-photo-placeholder {
     width: 100px;
     height: 100px;
@@ -220,14 +238,15 @@ body {
     background: #ccc;
     margin: 0 auto;
   }
-  
+
+/* popup button style */
   .popup-buttons {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
     gap: 7px;
   }
-  
+
   .popup-button {
     display: block; 
     margin: 10px 0; 
@@ -239,7 +258,8 @@ body {
     width: 80%; 
     max-width: 350px; 
   }
-  
+
+/* artist name style */
   .pop-artist-name {
     color: black;
     font-weight: bold;
@@ -262,7 +282,8 @@ body {
     justify-content: center;
     align-items: center;
   } 
-  
+
+/* paragraph style */
   p {
     color: #333;
   }
