@@ -27,7 +27,7 @@ body {
     flex-direction: row; /* Ensures that the items within the container are displayed in a row on larger screens */
     gap: 25px; /* Specifies space between each of the items*/
     justify-content: center; /* Horizontally center items */
-    align-items: center; /* Vertically center items */
+    align-items: top; /* Vertically center items */
   }
   
   @media (max-width: 800px) { /* Ensures that items within the container are stacked on top of eached in a column format on smaller screens */ 
@@ -60,4 +60,20 @@ body {
    /* Styling for the text under the buttons */
   .DifficultyLevel p { 
     color: #FF91ED; /* Sets the text colour*/
+  }
+
+
+ /* Styling for easy difficulty button */
+  #difficulty-button-easy {
+    cursor: pointer; /* Changes the cursor when the user hovers over the buttons*/
+  }
+
+  /* Styling for medium difficulty button */
+  #difficulty-button-medium {
+    background-color: #9C4D8F;
+  }
+
+  /* Styling for hard difficulty button */
+  #difficulty-button-hard {
+    background-color: #9C4D8F;
   }
