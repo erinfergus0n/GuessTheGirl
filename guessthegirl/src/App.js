@@ -47,6 +47,11 @@ const App = () => {
   return (
     <div>
       <NavigationBar />
+    <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <div className="app_header">Guess the Girl</div>
 
       <div className="app_font">

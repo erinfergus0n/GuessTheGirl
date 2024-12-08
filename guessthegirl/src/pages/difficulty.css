@@ -26,6 +26,8 @@ body {
     display: flex; 
     flex-direction: row; /* Ensures that the items within the container are displayed in a row on larger screens */
     gap: 25px; /* Specifies space between each of the items*/
+    justify-content: center; /* Horizontally center items */
+    align-items: center; /* Vertically center items */
   }
   
   @media (max-width: 800px) { /* Ensures that items within the container are stacked on top of eached in a column format on smaller screens */ 
