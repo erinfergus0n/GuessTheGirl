@@ -66,6 +66,8 @@ I do this because it can be hard to find good vegan baked goods.
 <li> Mysql2
 <li> Browser e.g. Chrome 
 <li> IDE e.g. VS Code 
+<li> @fortawesome/fontawesome-svg-core
+<li> @fortawesome/free-solid-svg-icons
 
 ### Installation 
 
@@ -94,6 +96,32 @@ Step 3: Verify the backend is working by opening localhost:5000 in a browser
 Step 1: Start the application by running 'npm start' in the terminal
 
 Step 2: Open localhost:3000 in a browser (if not automatically opened)
+
+## Testing Front-End
+
+`cd guessthegirl` then `npm test`
+
+## Testing Back-End
+
+`cd backend` then `npm test`
+
+## Testing Endpoints in Postman
+
+- Get daily artist
+
+**GET** http://localhost:5001/api/daily-artist
+
+- Check player search with daily artist
+
+**POST** http://localhost:5001/api/guess 
+
+```
+// Body - raw JSON
+{
+    "guess": "ariana grande",
+    "correctArtistId": 1
+}
+```
 
 ## Additional Information
 
