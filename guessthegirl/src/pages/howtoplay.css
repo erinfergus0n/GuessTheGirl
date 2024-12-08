@@ -1,38 +1,38 @@
-/* Body styling */
+
 body {
-    background-color: black; /* Set the background color of the page */
-    font-family: Arial, Helvetica, sans-serif; /* Set the font for the page */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    flex-direction: column; /* Align content in column format */
-    min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+    background-color: black; 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    min-height: 100vh; 
     overflow-y: auto;
   }
-  /* Styling for the header with gradient text */
+  
   .app_header {
-    font-size: 6vw; /* Use viewport width for scaling text size dynamically */
-    font-weight: bold; /* Make text bold */
-    background: linear-gradient(to right, #BF60FF, #FF91ED, #FFB26E); /* Apply gradient background */
-    -webkit-background-clip: text; /* Clip the background to the text (for Chrome, Safari) */
-    -webkit-text-fill-color: transparent; /* Make the text color transparent to show the gradient */
-    background-clip: text; /* Apply gradient effect to text */
-    margin-bottom: 2vw; /* Add spacing below the header */
-    text-align: center; /* Ensure text is centered */
+    font-size: 6vw; 
+    font-weight: bold; 
+    background: linear-gradient(to right, #BF60FF, #FF91ED, #FFB26E); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text; 
+    margin-bottom: 2vw; 
+    text-align: center; 
   }
   
   .HowToContainer { 
     display: flex; 
-    flex-direction: row; /* Ensures that the items within the container are displayed in a row on larger screens */
-    gap: 25px; /* Specifies space between each of the items*/
+    flex-direction: row; 
+    gap: 25px; 
     color: black;
   }
 
   .pink-box {
     background-color: #fcbef2;
-    color: black !important; /* Explicitly set text color */
+    color: black !important; 
     border: 2px solid #FFB0F2;
     border-radius: 10px;
     padding: 20px;
@@ -46,7 +46,7 @@ body {
   .pink-box h1,
   .pink-box p,
   .pink-box li {
-    color: black; /* Ensure all text is black */
+    color: black; 
   }
 
 .green-text {
@@ -62,7 +62,7 @@ body {
   }
 
   
-  @media (max-width: 800px) { /* Ensures that items within the container are stacked on top of eached in a column format on smaller screens */ 
+  @media (max-width: 800px) {  
     .HowToContainer {
       flex-direction: column;
     } 
@@ -74,7 +74,7 @@ body {
   
   ul {
     text-align: center;
-    list-style-type: none; /* Removes bullets */
-    padding: 0; /* Removes left padding */
-    margin: 0; /* Removes top/bottom margin */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
   }

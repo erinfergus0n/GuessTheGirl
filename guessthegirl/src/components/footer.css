@@ -1,26 +1,26 @@
 .footer { 
-    position: fixed; /* Ensures that footer is fixed to the bottom of the page */ 
+    position: fixed; 
     left: 0;
     bottom: 0;
-    width: 100%; /* Ensures that footer takes up the full width */ 
-    height: 50px; /* Sets the height of the footer */
-    padding: 10px; /* Creates space around the footers content */
-    background-color: black; /* Sets the footers background to black */
+    width: 100%; 
+    height: 50px; 
+    padding: 10px; 
+    background-color: black; 
     text-align: center;
  }
 
  .icons { 
-    display: flex; /* Use flexbox for layout */
+    display: flex; 
     justify-content: center; 
     gap: 20px;
 
 } .icons a { 
-    color: #FFB0F2; /* Makes social media icons pink */
+    color: #FFB0F2; 
     font-size: 24px; 
     text-decoration: none; 
 
 } 
 
 .icons a:hover { 
-    color: #FFB26E; /* Allows the social media icons to change colour when the user hovers over them */ }
+    color: #FFB26E; }
 

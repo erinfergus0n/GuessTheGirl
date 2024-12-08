@@ -1,4 +1,4 @@
-import './howtoplay.css'; // Import the CSS file for styling
+import './howtoplay.css'; 
 import Footer from '../components/footer';
 import NavigationBar from '../components/NavBar';
 
@@ -25,8 +25,10 @@ return (
       <li>The game will highlight each attribute of your guess:</li>
       <ul>
         <li><span className="green-text">Green:</span> Correct.</li>
-        <li><span className="orange-text">Amber:</span> Almost.</li>
+        <li><span className="orange-text">Yellow:</span> Almost.</li>
         <li><span className="grey-text">Grey:</span> Incorrect.</li>
+        <li>Yellow feedback is only applicable to the numerical categories of the game (debut year & spotify ranking). For ‘debut year’ close means the correct answer is within 5 years of the guess. For ‘Spotify Ranking’ it means the correct answer is within 50 places of the guess.
+        </li>
         </ul>
     </ul>
     <p><strong>Hints and Strategy:</strong></p>

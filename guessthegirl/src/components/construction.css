@@ -1,4 +1,4 @@
-/* Styling for the construction container */
+
 .construction_container {
     display: flex;
     position: absolute;
@@ -15,7 +15,7 @@
     transform: translate(-50%, -50%);
   }
   
-  /* Styling for the paragraph */
+
   .construction_container p {
     color: white;
     font-size: 30px;
