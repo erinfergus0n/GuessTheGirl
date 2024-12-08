@@ -5,6 +5,9 @@
 Guess The Girl is a music-themed game app, inspired by the popular game Wordle. <br>
 Players are given 10 attempts to guess the female musical artist of the day using clues based on their previous attempts. <br>
 This fun game is suitable for puzzle novices to enthusiasts. Uniquely, the game also focuses on female musical artists and brings a spotlight to women in the music industry. <br>
+<br>
+![image](https://github.com/user-attachments/assets/8e3282d5-237b-4cec-89d9-7707572852b8)
+
 
 ### Meet the Group Members:
 
