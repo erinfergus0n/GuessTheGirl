@@ -9,6 +9,7 @@ body {
     align-items: center; /* Center content vertically */
     flex-direction: column; /* Align content in column format */
     min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+    overflow-y: auto;
   }
   /* Styling for the header with gradient text */
   .app_header {

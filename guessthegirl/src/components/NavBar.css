@@ -1,6 +1,6 @@
 /* Stlying for the header */
 .header { 
-    display: flex; /* Use flexbox for layout */ 
+    display: fixed; /* Use flexbox for layout */ 
     justify-content: space-between; /* Ensures that items will have space between them */ 
     align-items: center; /* Ensures items are aligned in the center */ 
     box-sizing: border-box;
@@ -83,7 +83,7 @@
     color: black; /* Sets the colour of the links */
     text-decoration: none; /* Ensures the links aren't underlined */
     font-size: 20px; /* Sets the font size of the links */
-    text-align:center;
+    text-align:center; /* Centers the links in the menu */
    
   }
   
@@ -105,11 +105,13 @@
 
   /* Styling for the help icon */
   .help-icon {
+    position: relative;
     height: 30px; /* Set the height of the icon */
     width: auto; /* Auto sets the width - The browser calculates the width */
     margin-left: 10px; /* Add margin to the left of icon for spacing */ 
     display: inline-block; /* Displays an element as an inline-level block container */
-    margin-top: 10px; /* Add a margin to the top of the icon - used to move the image to be in line with the content in header-left */
+    margin-top: 0; /* Add a margin to the top of the icon - used to move the image to be in line with the content in header-left */
+    top: -15px;
   }
   
   
