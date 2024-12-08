@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Allows the 
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; // Specifies the icons to import from fortawesome
 import logo from '../logo.png'; // Imports the team logo
 import help from '../help.png'; // Imports the image for the help button within the header
+import { Outlet, Link } from "react-router-dom";
 
 const NavigationBar = (props) => { 
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -31,10 +32,24 @@ const NavigationBar = (props) => {
         <button className="exit-button" onClick={activateNavbar}>
           <FontAwesomeIcon icon={faTimes} />
         </button>
-        <a href="https://www.facebook.com/?locale=en_GB">How to play</a>
-        <a href="/about">About us</a>
-        <a href="https://www.facebook.com/?locale=en_GB">Feedback</a>
-        <a href="https://www.facebook.com/?locale=en_GB">Suggest an artist</a>
+        <ul>
+          <li>
+            <Link to="/"> Home</Link>
+          </li>
+          <li>
+            <Link to="/stats"> Statistics</Link>
+          </li>
+          <li>
+            <Link to="/about"> About Us</Link>
+          </li>
+          <li>
+            <Link to="/feedback"> Feedback</Link>
+          </li>
+          <li>
+            <Link to="/suggestion"> Suggest an Artist</Link>
+          </li>
+        </ul>
+        <Outlet />
       </div>
     </div>
   );

@@ -42,10 +42,11 @@
   
   /* Styling for the navigation bars exit button*/
   .exit-button {
+    position: absolute;
     font-size: 30px; /* Sets the size of the exit button */
     cursor: pointer; /* Sets the cursor to a pointer when users hover over the exit button */
-    top: 15px; /* Helps to set the positioning of the exit button */
-    left: 6px;/* Helps to set the positioning of the exit button */
+    top: 10px; /* Helps to set the positioning of the exit button */
+    left: 10px;/* Helps to set the positioning of the exit button */
     background: none; /* Sets no styling */
     border: none; /* Ensures there is no border styling applied */
     color: black; /* Sets the colour of the exit button */
@@ -81,10 +82,15 @@
     color: black; /* Sets the colour of the links */
     text-decoration: none; /* Ensures the links aren't underlined */
     font-size: 20px; /* Sets the font size of the links */
+    text-align: left;
   }
   
   .nav a:hover {
     font-size: 25px; /* When users hover over the text in the navigation bar, it will get bigger */
+  }
+
+  .nav ul{
+    list-style-type: none;
   }
 
   /* Styling for the GTG logo within the header */
