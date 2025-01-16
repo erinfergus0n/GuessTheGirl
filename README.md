@@ -1,5 +1,5 @@
 # Guess The Girl
-<h2>CFG-Group-4 Project (Full Stack 2)</h2>
+<h2>A full-stack group project</h2>
 
 ### About the Project
 Guess The Girl is a music-themed game app, inspired by the popular game Wordle. <br>
@@ -96,9 +96,4 @@ Step 2: Open localhost:3000 in a browser (if not automatically opened)
 }
 ```
 
-## Additional Information
-
-### Original project link
-
-https://github.com/joannalindsay17/CFG-Group-4
 
