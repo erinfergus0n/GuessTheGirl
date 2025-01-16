@@ -46,8 +46,6 @@ This fun game is suitable for puzzle novices to enthusiasts. Uniquely, the game 
 
 Step 1: Clone the Repository into a local folder
 
-<li> git clone https://github.com/joannalindsay17/CFG-Group-4.git
-
 Step 2: Open a project in an IDE
 
 Step 3: Install dependecies using npm 
@@ -72,7 +70,7 @@ Step 2: Open localhost:3000 in a browser (if not automatically opened)
 
 ## Testing Front-End
 
-`cd guessthegirl` then `npm test`
+`cd frontend` then `npm test`
 
 ## Testing Back-End
 
