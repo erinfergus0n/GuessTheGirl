@@ -1,0 +1,26 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "Full-stack React + Express app with MySQL",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "test": "jest",
+      "build": "npm run build --prefix frontend",
+      "install-client": "npm install --prefix frontend",
+      "start-client": "npm start --prefix frontend"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "dotenv": "^16.4.5",
+      "express": "^4.21.2",
+      "mysql2": "^3.11.5"
+    },
+    "devDependencies": {
+      "jest": "^29.7.0",
+      "supertest": "^7.0.0"
+    }
+  }
+  

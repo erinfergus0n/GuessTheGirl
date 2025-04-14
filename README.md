@@ -10,9 +10,17 @@ I focused on backend endpoints and game logic, as well as simple testing.
 ![image](https://github.com/user-attachments/assets/8e3282d5-237b-4cec-89d9-7707572852b8)
 
 ### Frameworks and Libraries
-<li> React.js 
+- React.js 
+- Express.js
+- Node.js
+- MySQL
+- Axios
+- dotenv
+- cors
+- @fortawesome/fontawesome-svg-core
+- @fortawesome/free-solid-svg-icons
 
-### Features
+## Features
 
 #### Pages
 <li> Homepage
@@ -24,51 +32,62 @@ I focused on backend endpoints and game logic, as well as simple testing.
 #### Components
 <li> Navigation Bar 
 <li> Hamburger Menu
-<li> Footer (with social media links) 
+<li> Footer with social media links
+
 
 ## Getting Started
 
 ### Prerequisites
 
-<li> Node.js 
-<li> Npm 
-<li> Express.js 
-<li> Axios 
-<li> Cors
-<li> dotenv
-<li> Mysql2
-<li> Browser e.g. Chrome 
-<li> IDE e.g. VS Code 
-<li> @fortawesome/fontawesome-svg-core
-<li> @fortawesome/free-solid-svg-icons
+- Node.js  
+- Npm  
+- MySQL installed and running  
+- IDE (e.g. VS Code)  
+- Browser (e.g. Chrome) 
+
 
 ### Installation 
 
-Step 1: Clone the Repository into a local folder
+Step 1: Clone the Repository. 
 
-Step 2: Open the project in an IDE
+Step 2: Install dependencies.
+<br> 
+`npm install` 
+<br>
+`npm install --prefix frontend`
 
-Step 3: Install dependecies in backend **and** front end folders by running `npm install`
+Step 3: Set up environment variables.
+<br>
+Create a .env file in the root directory and add...
 
-Step 4. Input your SQL password in the .env file in the backend directory 
+```
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_mysql_password
+DB_NAME=your_database_name
+PORT=5001
+```
 
-<li> DB_PASSWORD='enter your SQL root password here'
+Step 4. Build the front-end.
+<br>
+`npm run build`
 
-### Running the Application (in development mode)
 
-Step 1: `cd backend` > `node server.js`
+### Running the Application 
 
-Step 2: `cd frontend` > `npm start`
+`npm start`
 
-## Testing Front-End
+## Testing 
 
-`cd frontend` > `npm test`
+### Front-End
 
-## Testing Back-End
+`npm test --prefix frontend`
 
-`cd backend` > `npm test`
+### Back-End
 
-## Testing Endpoints in Postman
+`npm test`
+
+### Testing Endpoints in Postman
 
 - Get daily artist
 
