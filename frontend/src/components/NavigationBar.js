@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './NavBar.css'; // Import the CSS file for styling
+import './NavigationBar.css'; // Import the CSS file for styling
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Allows the use of Font Awesome icons
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'; // Specifies the icons to import from fortawesome
 import logo from '../logo.png'; // Imports the team logo

@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css'; 
 import { useNavigate } from "react-router-dom";  
-import Footer from './components/footer';
-import NavigationBar from './components/NavBar';
+import Footer from './components/Footer';
+import NavigationBar from './components/NavigationBar';
 
 const App = () => {
 

@@ -1,6 +1,6 @@
-import './howtoplay.css'; 
-import Footer from '../components/footer';
-import NavigationBar from '../components/NavBar';
+import './HowToPage.css'; 
+import Footer from '../components/Footer';
+import NavigationBar from '../components/NavigationBar';
 
 const HowToPage = () => {
 return (

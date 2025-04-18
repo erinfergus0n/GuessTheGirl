@@ -1,8 +1,8 @@
 import React from 'react';
 import '../App.css';
-import Footer from '../components/footer';
-import NavigationBar from '../components/NavBar';
-import ConstructionPage from '../components/construction';
+import Footer from '../components/Footer';
+import NavigationBar from '../components/NavigationBar';
+import ConstructionPage from '../components/ConstructionPage';
 
 
 const FeedbackPage = () => {

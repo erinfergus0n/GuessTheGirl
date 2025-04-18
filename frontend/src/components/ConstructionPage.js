@@ -1,5 +1,5 @@
 import React from 'react';
-import './construction.css';
+import './ConstructionPage.css';
 
 const ConstructionPage = () =>{
 
