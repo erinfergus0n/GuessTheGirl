@@ -1,15 +1,15 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import StatsPage from './stats';
+import SuggestionPage from './SuggestionPage';
 
-test('renders Stats page with header "Statistics"', () => {
+test('renders Suggestion page header', () => {
   render(
     <MemoryRouter>
-      <StatsPage />
+      <SuggestionPage />
     </MemoryRouter>
   );
-  
-  const header = screen.getByText(/statistics/i, { selector: '.app_header' });
+
+  const header = screen.getByText(/suggest an artist/i, { selector: '.app_header' });
   expect(header).toBeInTheDocument();
 });

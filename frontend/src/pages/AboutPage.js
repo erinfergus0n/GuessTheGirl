@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
-import Footer from '../components/footer';
-import NavigationBar from '../components/NavBar';
+import Footer from '../components/Footer';
+import NavigationBar from '../components/NavigationBar';
 import Creators from '../components/CreatorInfo';
 
 const AboutPage = () => {

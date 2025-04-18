@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import ConstructionPage from './construction';
+import ConstructionPage from './ConstructionPage';
 
 test('renders coming soon text', () => {
   const { getByText } = render(<ConstructionPage />);

@@ -1,31 +1,43 @@
 // Dependencies
-const dotenv = require('dotenv')
-dotenv.config()
-console.log(`Your MySQL user is ${process.env.DB_USER}`)
-console.log(`Your password is ${process.env.DB_PASSWORD}`)
+// const dotenv = require('dotenv')
+// dotenv.config()
+
 const mysql = require('mysql2');
 const express = require('express');
 const cors = require('cors');
+const path = require('path')
+
 const app = express();
 const port = process.env.PORT || 5001;
-
-const path = require('path')
 
 app.use(cors());  
 app.use(express.json());  
 
-
 // Creating a mySQL connection
+// const pool = mysql.createPool({
+//     host: process.env.DB_HOST,
+//     user: process.env.DB_USER,
+//     password: process.env.DB_PASSWORD,
+//     database: process.env.DB_NAME,
+//     waitForConnections: true,
+//     connectionLimit: 10,
+//     queueLimit: 0
+// });
+// const db = pool.promise(); 
+
 const pool = mysql.createPool({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: process.env.DB_PORT || 3306,
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0
 });
-const db = pool.promise(); 
+const db = pool.promise();
+
+
 
 
 // Connecting to the SQL database

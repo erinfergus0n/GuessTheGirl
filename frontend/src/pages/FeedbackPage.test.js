@@ -1,15 +1,15 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import HowToPage from './howtoplay';
+import FeedbackPage from './FeedbackPage';
 
-test('renders How To Play page header', () => {
+test('renders Feedback page header', () => {
   render(
     <MemoryRouter>
-      <HowToPage />
+      <FeedbackPage />
     </MemoryRouter>
   );
 
-  const header = screen.getByText(/how to/i, { selector: '.app_header' });
+  const header = screen.getByText(/feedback/i, { selector: '.app_header' });
   expect(header).toBeInTheDocument();
 });

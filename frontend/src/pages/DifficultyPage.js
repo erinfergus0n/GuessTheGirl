@@ -1,7 +1,7 @@
 import React from 'react';
-import './difficulty.css'; 
-import Footer from '../components/footer';
-import NavigationBar from '../components/NavBar';
+import './DifficultyPage.css'; 
+import Footer from '../components/Footer';
+import NavigationBar from '../components/NavigationBar';
 import { useNavigate } from "react-router-dom";  
 
 const DifficultyPage = () => {
